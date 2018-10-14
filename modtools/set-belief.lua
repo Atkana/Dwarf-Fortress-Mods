@@ -165,6 +165,8 @@ local function getCurBeliefValue(unit, beliefId)
 		return upers.values[pointers[beliefId]].strength
 	elseif upers.cultural_identity ~= -1 then
 		return df.cultural_identity.find(upers.cultural_identity).values[beliefId]
+	elseif upers.civ_id ~= -1 then
+		return df.historical_entity.find(upers.civ_id).resources.values[beliefId]
 	else
 		return 0 --outsiders have no culture
 	end	
