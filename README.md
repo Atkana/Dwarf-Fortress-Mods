@@ -21,3 +21,6 @@ The download also contains a small tweak script to allow for playing as non-stan
 
 ## gm-newnit
 A version of gui/gm-unit from the base DFhack scripts that adds the ability to change the unit's personality, beliefs, and physical appearance. This was made a while ago, and may no longer work properly. It was also my first and only attempt at GUI-related DFhackery, and so may be janky (though it works). *Requires modtools/set-personality and modtools/set-belief. Find them in the modtools section of this repo.*
+
+## prefUtils
+A utility for interacting with a unit's preferences via script code. I never built the nice wrapper for it so you could execute its functions using the dfhack command prompt (like modtools/whatever), and I don't think it follows the standard dfhack procedure for making a module. Has a few useful notes about preference related stuff in its comments. I *think* I tested to make sure everything worked...
