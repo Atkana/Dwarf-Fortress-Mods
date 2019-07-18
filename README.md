@@ -23,9 +23,11 @@ The download also contains a small tweak script to allow for playing as non-stan
 A version of gui/gm-unit from the base DFhack scripts that adds the ability to change the unit's personality, beliefs, and physical appearance. This was made a while ago, and may no longer work properly. It was also my first and only attempt at GUI-related DFhackery, and so may be janky (though it works). *Requires modtools/set-personality and modtools/set-belief. Find them in the modtools section of this repo.*
 
 ## rename-beasts
-A simple script that permanently renames all of a save's Forgotten Beasts to a given name. The script requires an entry for their `singular`, `plural`, and `adjective` names just like vanilla raws.
+A simple script that permanently changes the names of all of a given type of generated creature in the current save. The script requires an entry for their `singular`, `plural`, and `adjective` names just like vanilla raws, as well as a `type` to select which generated creature type to change.
 
-Example usage: ``rename-beasts -singular "Fun beast" -plural "Fun beasts" -adjective "Fun beast"``
+Valid types are: `FORGOTTEN_BEAST`, `DEMON`, `UNIQUE_DEMON`, `ANGEL`, `NIGHT_TROLL`, `TITAN`, `BOGEYMAN`, `WEREBEAST`
+
+Example usage: ``rename-beasts -type FORGOTTEN_BEAST -singular "Fun beast" -plural "Fun beasts" -adjective "Fun beast"``
 
 ## prefUtils
 A utility for interacting with a unit's preferences via script code. I never built the nice wrapper for it so you could execute its functions using the dfhack command prompt (like modtools/whatever), and I don't think it follows the standard dfhack procedure for making a module. Has a few useful notes about preference related stuff in its comments. I *think* I tested to make sure everything worked...
