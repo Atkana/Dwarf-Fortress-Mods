@@ -38,3 +38,13 @@ Sets the combat-hardened value on a unit (or all members of your fort), making t
 See help entry for usage.
 
 Example usage: ``combat-harden -value 100 -citizens``
+
+## make-companion
+Turns the selected unit into a companion for your current adventurer. 
+
+See help entry for usage.
+
+**Notes:**
+* The game will usually generate a nemesis record and historical figure data after you first talk to that person.
+* Because the unit didn't join as part of an agreement, you'll have to use dfhack's `gui/companion-order` to get them to leave. If you're using dfhack 0.44.12-r2, you'll need to download an updated version of `companion-order` since the one that shipped with the release is broken.
+* While animals are smart enough to obey your request via the talk menu for them to wait in a spot, they aren't smart enough to follow you again if you ask them. They'll just stand in place, forever. So maybe don't do that.
