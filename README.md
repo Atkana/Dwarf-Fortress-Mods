@@ -31,3 +31,10 @@ Example usage: ``rename-beasts -type FORGOTTEN_BEAST -singular "Fun beast" -plur
 
 ## prefUtils
 A utility for interacting with a unit's preferences via script code. I never built the nice wrapper for it so you could execute its functions using the dfhack command prompt (like modtools/whatever), and I don't think it follows the standard dfhack procedure for making a module. Has a few useful notes about preference related stuff in its comments. I *think* I tested to make sure everything worked...
+
+## combat-harden
+Sets the combat-hardened value on a unit (or all members of your fort), making them care more/less about seeing corpses. Combat hardened is a stat that every unit has which I believe increases when witnessing death (or maybe when killing, I don't fully know the mechanic). As it reaches certain thresholds, the unit will get less intense emotions when witnessing death (and maybe corpses), until at max they no longer feel any negative emotion.
+
+See help entry for usage.
+
+Example usage: ``combat-harden -value 100 -citizens``
