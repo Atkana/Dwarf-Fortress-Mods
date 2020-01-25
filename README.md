@@ -51,3 +51,10 @@ See help entry for usage.
 
 ## sexuality
 A simple GUI for editing the orientation of a selected unit. You can manually toggle each value, or use randomise to roll again using the weights set out by the creature's caste (the values set by the `ORIENTATION` token).
+
+## clothing-optional
+A utility script that you can use to make creatures or entities not generate bad thoughts for lacking particular clothing items (i.e. shirts, pants, or shoes). Changes persist until the world is unloaded, so it's best to run every command you want from within an [onLoad.init](https://dfhack.readthedocs.io/en/stable/docs/Core.html#onload-init "DFHack Documentation"). Works by resetting the anger points every so often, so it may let some thoughts slip through at the start if this is the first time the script has been used on a save, and it won't remove the angry thoughts that are already present.
+
+See help entry for usage.
+
+Example usage: ``clothing-optional -creature DWARF -shoes -shirt`` Will make dwarves not care about being shoeless and/or shirtless. I like to think dwarven taverns operate on a "No shoes, no shirt, no problem" policy.
