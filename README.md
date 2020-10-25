@@ -58,3 +58,10 @@ A utility script that you can use to make creatures or entities not generate bad
 See help entry for usage.
 
 Example usage: ``clothing-optional -creature DWARF -shoes -shirt`` Will make dwarves not care about being shoeless and/or shirtless. I like to think dwarven taverns operate on a "No shoes, no shirt, no problem" policy.
+
+## make-citizen
+An attempt at replacing the functionality of the now outdated `tweak makeown`. The script allows for converting units and animals to belong to a different civilization. In fort mode, you can use this to make full citizens out of visiting units.
+
+The script isn't extensively tested (and missing some extra features), but is completely functional in basic cases. I haven't tested the more weirder cases such as what happens when you convert invaders.
+
+See help entry for usage.
