@@ -3,6 +3,8 @@ These are an attempt to create a method of applying basic changes to the game vi
 
 These scripts generally need to be run before a world is loaded, and persist until the game is closed (except in cases where the patch is marked as temporary - if you run one of the scripts while a save is loaded, it'll be unloaded when the world is). Therefore, you should probably run them in the main menu, or even better is to place all the commands you want to run inside a `dfhack*.init` file so they are automatically run when the game is launched.
 
+`world-patch` is required by all of these scripts, so make sure to include it! The rest are all optional.
+
 ## adventurer-creatures
 Allows setting creatures to be available as outsiders during adventure mode. You can set specific creatures to be available, creatures that can learn, or all creatures, regardless of how well they might play...
 
@@ -48,3 +50,5 @@ See help entry for usage.
 Not intended to be run as a script by itself. It works as a handler for the patches, managing when to run the code of each patch that registers itself to it. It was originally also intended to provide sets of useful functions for handling some more standard style of patches (such as some handler for applying patches to creatures), but nothing has been included as of yet. Currently, all patches use their own bespoke custom code for applying their effects, and only take place during world loads.
 
 (Documentation might go here at some point - otherwise just look at the code and examples here to figure it out for yourself if you're interested in using it :p The main functions you want to look at are `world-patch`'s `register_patch`, and the `register_patch` and `patch_code` functions of the patch examples)
+
+This script is required for all other patch scripts to work.
