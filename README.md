@@ -65,3 +65,16 @@ An attempt at replacing the functionality of the now outdated `tweak makeown`. T
 The script isn't extensively tested (and missing some extra features), but is completely functional in basic cases. I haven't tested the more weirder cases such as what happens when you convert invaders.
 
 See help entry for usage.
+
+## patch/*
+An attempt to create a method of applying basic changes to the game via the use of non-destructive code rather than editing raw files. This makes it potentially simpler to run lots of different mods, as well as alter some aspects that wouldn't otherwise be available to edit in raws (such as the raws of generated creatures).
+
+As of time of writing, this is what's currently available via patches:
+- Have Modest Mod's extra skin yields and ability to tan scales in fortress mode.
+- Make creatures tameable, trainable and/or mountable.
+- Disable flight on intelligent creatures during fortress mode.
+- Alter the wait period for web spray attacks (for both raw-defined and generated creatures).
+- Make particular creatures available to play as outsiders in adventure mode.
+- Make creatures be able to have strange mood during fortress mode (because hey, they're fun).
+
+See the readme in the `patch/` folder for more detailed information on each.
