@@ -78,3 +78,12 @@ As of time of writing, this is what's currently available via patches:
 - Make creatures be able to have strange mood during fortress mode (because hey, they're fun).
 
 See the readme in the `patch/` folder for more detailed information on each.
+
+## announce-skills
+Creates announcements related to citizens levelling up their skills in fort mode. The script can make announcements for any skill increase, as well as report when a new citizen becomes the best at a skill. It can be configured to only consider certain categories of skills, in case there's some you're focused/not interested in. Unless you plan to have different configurations between saves, this only needs to be run once per session, and so is a good candidate to include within a [dfhack*.init](https://dfhack.readthedocs.io/en/stable/docs/Core.html#dfhack-init "DFHack Documentation")
+
+I've only lightly tested this, but it seems to work fine. There might be a bit of jank when insane citizens are involved, but it's not like everything will be ruined if this fails to report some skill gains properly.
+
+See help entry for usage.
+
+Example usage: ``announce-skills -best -skillup -all`` Will report whenever citizens gain any skill level, and whenever there's a new best citizen at any skill.
