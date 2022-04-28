@@ -77,3 +77,10 @@ I've only lightly tested this, but it seems to work fine. There might be a bit o
 See help entry for usage.
 
 Example usage: ``announce-skills -best -skillup -all`` Will report whenever citizens gain any skill level, and whenever there's a new best citizen at any skill.
+
+## passive-training
+Allows the player to select skills for their adventurer (or other chosen unit) to passively train over time. They'll gain experience as time passes, split across all the skills you have selected and accounting for their skill learn rates. See this as an alternative to simply sitting around grinding skills manually.
+
+See help entry for usage.
+
+**Important Note:** Requires `script-data` to be installed. If it's not already part of DFhack, you can find a copy on this repo in the `Other` folder.
