@@ -84,3 +84,8 @@ Allows the player to select skills for their adventurer (or other chosen unit) t
 See help entry for usage.
 
 **Important Note:** Requires `script-data` to be installed. If it's not already part of DFhack, you can find a copy on this repo in the `Other` folder.
+
+## auto-cannibalism
+A workaround / fix that runs in the background that allows entities who should otherwise be able to, to eat sapient creatures / use their parts (currently Dwarf Fortress is bugged and doesn't allow it). It can also be used to allow non-sapient-eaters to butcher the corpses of their dead animals (again, another Dwarf Fortress bug), if willing to live with the side-effects of the script's workarounds.
+
+See help entry for usage and info.
