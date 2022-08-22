@@ -1,6 +1,6 @@
 -- Makes any creature that dies cannibal-able
 --@ module = true
--- Release Version: 1
+-- Release Version: 2
 
 --[[ Relevant notes on how butchering filters apply:
 - If a corpse is for a sapient creature, your government needs to have ethics that allow eating sapients: EAT_SAPIENT_OTHER must be either ACCEPTABLE or PERSONAL_MATTER
@@ -70,6 +70,11 @@ function on_item_created(item_id)
 	end
 	
 	local unit = df.unit.find(item.unit_id)
+	
+	-- Don't scrub details if the creature is still alive!
+	if ( dfhack.units.isAlive(unit) ) then
+		return
+	end
 
 	if ( scrub_civ == true ) then
 		remove_civ_status(unit)
